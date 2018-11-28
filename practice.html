@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TITLE</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <style>
+        body {
+            font-size: 17px;
+            font-family: arial;
+            background: lightgray;
+            line-height: 1.5em;
+        }
+
+        header {
+            background: blue;
+            text-align: center;
+        }
+
+        #container {
+            width: 90%;
+            margin: auto;
+            padding: 10px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+        <h1>jQuery Crash Course</h1>
+    </header>
+
+    <div id="container">
+        <h1 id="heading1">Heading One</h1>
+        <p id= "para1"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta laborum architecto, consequatur
+            reprehenderit quas quae excepturi pariatur dolor et odio neque vel. Doloremque quibusdam,<span>aspernatur
+                dolorem explicabo cumque</span>repellendus odit!</p>
+
+        <h1 class="heading2">Heading Two</h1>
+        <p class="para2"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta laborum architecto,
+            consequatur reprehenderit quas quae excepturi pariatur dolor et odio neque vel. Doloremque quibusdam,<span>aspernatur
+                dolorem explicabo cumque</span>repellendus odit!</p>
+
+        <ul id="list">
+            <li>List Item</li>
+            <li>List Item</li>
+            <li>List Item</li>
+            <li>List Item</li>
+            <li>List Item</li>
+            <li>List Item</li>
+            <li>List Item</li>
+            <li>List Item</li>
+        </ul>
+    <input type="button" value="Button 1">
+    <input type="submit" value="Button 2">
+    <input type="text">
+
+        <a href="http://google.com">Google</a>
+        <a href="http://yahoo.com">Yahoo</a>
+
+    </div>
+    <script>
+        //  $("h1").hide();
+        //    $(".heading2").hide();
+
+        // $('p span').css('color', 'red');
+    
+        $('ul#list li:first').css('color', 'red')
+        $('ul#list li:last').css('color', 'green')
+        $('ul#list li:even').css('background-color', 'yellow')
+        $('ul#list li:odd').css('background-color', 'pink')
+        $('ul#list li:nth-child(3n)').css('list-style', 'none');
+
+        // $(':text').hide();
+        $('[href]').css('color', 'red');
+        $('a[href="http://yahoo.com"]').css('color','green');
+       // $('*').hide();
+
+
+    </script>
+
+    
+
+
+
+    <br />
+    <br />
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <script src="practicescript.js"></script>
+</body>
+
+</html>
